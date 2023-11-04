@@ -1,8 +1,7 @@
 //Libs
 
-
 //Local
-import PlaceForm from "../components/PlaceForm";
+import PlaceForm from "../components/Places/PlaceForm";
 
 function AddPlace() {
   return <PlaceForm />;
