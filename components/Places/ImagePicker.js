@@ -6,10 +6,10 @@ import {
   PermissionStatus,
 } from "expo-image-picker";
 import { useState } from "react";
-import { Colors } from "../../constants/colors";
-import OutlinedButton from "../UI/OutlinedButton";
 
 //Local
+import { Colors } from "../../constants/colors";
+import OutlinedButton from "../UI/OutlinedButton";
 
 function ImagePicker() {
   const [pickedImage, setPickedImage] = useState();
@@ -78,5 +78,6 @@ const styles = StyleSheet.create({
   image: {
     width: "100%",
     height: "100%",
+    borderRadius: 4,
   },
 });
