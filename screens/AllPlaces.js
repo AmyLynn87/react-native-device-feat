@@ -15,10 +15,10 @@ function AllPlaces() {
     async function loadPlaces() {
       const places = await fetchPlaces();
       console.log("places", places);
+      setLoadedPlaces(places);
     }
     if (isFocused) {
       loadPlaces();
-      // setLoadedPlaces((curPlaces) => [...curPlaces, route.params.place]);
     }
   }, [isFocused]);
 
