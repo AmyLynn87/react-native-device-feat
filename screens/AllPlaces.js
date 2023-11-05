@@ -14,7 +14,6 @@ function AllPlaces() {
   useEffect(() => {
     async function loadPlaces() {
       const places = await fetchPlaces();
-      console.log("places", places);
       setLoadedPlaces(places);
     }
     if (isFocused) {
